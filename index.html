@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row border border-primary">
+        <div class="col-12">Weather Dashboard</div>
+      </div>
+      <!-- history -->
+      <div class="row border border-primary">
+        <div class="col-3 border">
+          <!-- search form -->
+          <h1>Search Your City</h1>
+          <form id="searchForm" class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <input id="searchInput" class="form-control" placeholder="Type Your City Here" />
+            </div>
+            <div id="searchHistory">
+              <button type="submit" class="js-history btn btn-primary btn-block mb-2">Search</button>
+            </div>
+          </form>
+        </div>
+        <!-- forecast card columns -->
+        <div class="col-9 border">
+          <!-- row 1 -->
+          <div id="currentWeather" class="row border">
+            <h2>City</h2>
+          </div>
+          <!-- row 2 -->
+          <div id="results" class="row border">
+            <h2>forecast text</h2>
+          </div>
+          <!-- row 3 -->
+          <div class="row border d-flex justify-content-between">
+            <!-- 5 day forecast -->
+            <!-- card 1 -->
+            <div id="fiveDayWeather">
+              <div class="col px-0">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="col px-0">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
