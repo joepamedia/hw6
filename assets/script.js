@@ -25,7 +25,7 @@ function handleCurrentWeather(coordinates, city) {
   const lat = coordinates.lat;
   const lon = coordinates.lon;
 
-  const fetchUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&units=imperial&appid=4b9f7dc3f8536150bc0eb915e8e4a81b`;
+  const fetchUrl = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&units=imperial&appid=4b9f7dc3f8536150bc0eb915e8e4a81b`;
 
   fetch(fetchUrl)
     .then(function (response) {
@@ -40,7 +40,7 @@ function handleCurrentWeather(coordinates, city) {
 
 function displayCurrentWeather(currentCityData, cityName) {
   // shows current city and weather
-  let weatherIcon = `https://openweathermap.org/img/wn/${currentCityData.weather[0].icon}.png`;
+  let weatherIcon = `http://openweathermap.org/img/wn/${currentCityData.weather[0].icon}.png`;
   // handles responsive color highlight around UV index
   let uvClass = "low";
   if (currentCityData.uvi > 1 && currentCityData.uvi < 5) {
