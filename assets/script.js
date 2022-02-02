@@ -61,7 +61,7 @@ function displayFiveDayWeather(fiveDayCityData) {
     // shows icon corresponding to weather
     let weatherIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
     // shows 5 day forecast for each day
-    document.querySelector("#fiveDayWeather").innerHTML += `<div class="col-sm m-1 p-2 card"><div> ${moment.unix(day.dt).format("MMM Do YY")}</div> <div><img src="${weatherIcon}"><div>Temp: ${day.temp.day} \xB0F <br></br> Wind: ${day.wind_speed} MPH <br></br> Humidity: ${day.humidity} %</div></div></div>`;
+    document.querySelector("#fiveDayWeather").innerHTML += `<div class="col-sm m-1 p-2 card card-color"><div> ${moment.unix(day.dt).format("MMM Do YY")}</div> <div><img src="${weatherIcon}"><div>Temp: ${day.temp.day} \xB0F <br></br> Wind: ${day.wind_speed} MPH <br></br> Humidity: ${day.humidity} %</div></div></div>`;
   });
 }
 
@@ -76,7 +76,7 @@ function handleFormSubmit(event) {
     return searchCities.indexOf(city) === index;
   });
   filteredCities.forEach((city) => {
-    document.querySelector("#searchHistory").innerHTML += `<button data-city="${city}" class="w-100 d-block my-2 btn-secondary">${city}</button>`;
+    document.querySelector("#searchHistory").innerHTML += `<button data-city="${city}" class="w-100 d-block my-2 btn-secondary history-btn">${city}</button>`;
   });
 
   handleCoords(city);

@@ -9,3 +9,19 @@
 .high {
   background-color: red;
 }
+
+.card-color {
+  background-color: #33475a;
+  color: white;
+}
+
+.history-btn {
+  background-color: #b7b7b7;
+  color: #484848;
+}
+
+.header-gradient {
+  background: rgb(58, 106, 191);
+  background: linear-gradient(90deg, rgba(58, 106, 191, 1) 0%, rgba(37, 11, 92, 1) 100%);
+  color: white;
+}
