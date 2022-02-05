@@ -6,6 +6,6 @@ Repo:
 Page: 
 
 # gif
-[![weatherdashboard](https://user-images.githubusercontent.com/95255407/152657709-a6c88d9a-0a72-4460-92ba-7887bd9306e1.gif)
+![weatherdashboard](https://user-images.githubusercontent.com/95255407/152657709-a6c88d9a-0a72-4460-92ba-7887bd9306e1.gif)
 
 
