@@ -3,6 +3,7 @@ This is a forecast and current weather webpage. The user is presented with an in
 
 # Links
 Repo: https://github.com/joepamedia/weather-dashboard
+
 Page: https://joepamedia.github.io/weather-dashboard/
 
 # Gif
